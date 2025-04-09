@@ -4,7 +4,8 @@ spring:
       server:
         git:
           #default-label: config-server   #Aqui se especifica la rama
-          default-label: eureka    #Se cambia de rama a eureka para trabajar con eureka service
+          #default-label: eureka    #Se cambia de rama a eureka para trabajar con eureka service
+          default-label: eureka   #Se cambia de rama a multiple-instance
           uri: https://github.com/Wil1999/microservices-local
           search-paths: config-data
   application:
