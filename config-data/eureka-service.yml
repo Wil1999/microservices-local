@@ -9,3 +9,5 @@ eureka:
   client:
     fetch-registry: false  #Se coloca false por que no es cliente, en cambio en los demás servicios es TRUE
     register-with-eureka: false
+    service-url:
+      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
