@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-service
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    fetch-registry: false  #Se coloca false por que no es cliente, en cambio en los demás servicios es TRUE
+    register-with-eureka: false
