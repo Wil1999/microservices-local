@@ -3,4 +3,4 @@ spring:
     name: usuario-service
 
 server:
-  port: 8081
+  port: 8080
