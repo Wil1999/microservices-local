@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server   #Aqui se especifica la rama
+          uri: https://github.com/Wil1999/microservices-local
+          search-paths: config-data
+  application:
+    name: config-server
+
+server:
+  port: 8081
