@@ -7,7 +7,8 @@ spring:
           #default-label: eureka    #Se cambia de rama a eureka para trabajar con eureka service
           #default-label: multiple-instance   #Se cambia de rama a multiple-instance
           #default-label: gateway   #Se cambia rama gateway para usar el endpoint api gateway
-          default-label: circuit-breaker   #Se cambia rama circuit-breaker
+          #default-label: circuit-breaker   #Se cambia rama circuit-breaker
+          default-label: zipkin   #Se cambia rama de zipkin
           uri: https://github.com/Wil1999/microservices-local
           search-paths: config-data
   application:

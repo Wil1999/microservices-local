@@ -1,6 +1,7 @@
 spring:
   application:
     name: moto-service
+    zipkin: http://localhost:9411
 
 server:
   #port: 8083
