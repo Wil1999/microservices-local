@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.usuario_service.models.Moto;
 
-@FeignClient(name="moto-service",url="http://localhost:8083")
+//@FeignClient(name="moto-service",url="http://localhost:8083")
+@FeignClient(name="moto-service")  //Lo acortamos debido a que estamos usando eureka
 public interface MotoFeignClient {
 	
 	@PostMapping("/moto")

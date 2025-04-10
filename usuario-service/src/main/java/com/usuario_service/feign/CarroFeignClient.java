@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.usuario_service.models.Carro;
 
-@FeignClient(name="carro-service", url = "http://localhost:8082")
+//@FeignClient(name="carro-service", url = "http://localhost:8082")
+@FeignClient(name="carro-service") // Lo acortamos debido a que estamos usando eureka
 public interface CarroFeignClient {
 
 	@PostMapping("/carro")
