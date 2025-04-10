@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.usuario_service.models.Moto;
 
-@FeignClient(name="moto-service",url="http://localhost:8083")
+//@FeignClient(name="moto-service",url="http://localhost:8083")
+@FeignClient(name="moto-service")  //Cuando usamos api gateway ya no colocamos la url solo el identificador
 public interface MotoFeignClient {
 	
 	@PostMapping("/moto")

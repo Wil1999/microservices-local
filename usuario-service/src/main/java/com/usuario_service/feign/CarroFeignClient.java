@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.usuario_service.models.Carro;
 
-@FeignClient(name="carro-service", url = "http://localhost:8082")
+//@FeignClient(name="carro-service", url = "http://localhost:8082")
+@FeignClient(name="carro-service")  //Cuando usamos api gateway ya no colocamos la url solo el identificador
 public interface CarroFeignClient {
 
 	@PostMapping("/carro")
